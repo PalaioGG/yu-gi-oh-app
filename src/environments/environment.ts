@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  data_url: 'http://52.57.88.137/api/card_data/'
 };
 
 /*

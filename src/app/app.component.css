@@ -1,0 +1,55 @@
+/* purple: #532274 */
+/* blue: #005273 */
+/* ciel: #45D1C3 */
+/* dark blue: #0C0E25 */
+/* gray: #E9E9E9 */
+  
+.yu-gi-oh-app {
+    min-height: 100%;
+    width: 100%;
+    color: #0C0E25;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.sidebar {
+    position: relative;
+    /* flex: 1; */
+    min-width: 22em;
+    background-color: #E9E9E9;
+    width: 100%;
+}
+
+.main-view {
+    flex: 1;
+    overflow: auto;
+}
+
+.togglable {
+    position: absolute;
+    z-index: 99;
+}
+
+.togglable.off {
+    left: -100%;
+}
+.togglable.on {
+    left: 0;
+}
+  
+@media screen and (min-width: 1250px) {
+
+}
+
+@media screen and (min-width: 990px) {
+    .sidebar {
+        width: auto;
+    }
+    .togglable {
+        position: relative;
+    }
+}

@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+    height: 100%;
+    font-family: "Verdana";
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E9E9E9;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.switch {
+    height: 50px;
+    width: 100%;
+    background-color: #45D1C3;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 990px) {
+    .switch {
+        display: none;
+    }
+}

@@ -1,0 +1,55 @@
+<div class="card-information" *ngIf="card">
+  <div class="image-holder">
+      <img src="http://52.57.88.137/api/card_image/{{card.name}}">
+  </div>
+  <div class="information-container">
+    <div *ngIf="card.card_type === 'SPELL' || card.card_type === 'TRAP'">
+      <div class="card-field card-name">
+        <span class="label">Name:</span>
+        <span class="text">{{card.name}}</span>  
+      </div>
+      <div class="card-field card-property">
+        <span class="label">Property:</span>
+        <span class="text">{{card.property}}</span>  
+      </div>
+      <div class="card-field card-text">
+        <span class="label">Card text:</span>
+        <span class="text">{{card.text}}</span>
+      </div>
+    </div>
+    <div *ngIf="card.card_type === 'MONSTER'">
+      <div class="card-field card-name">
+        <span class="label">Name:</span>
+        <span class="text">{{card.name}}</span>  
+      </div>
+      <div class="inline-content">
+        <div class="inline card-field card-family">
+          <span class="label">Family:</span>
+          <span class="text">{{card.family}}</span>  
+        </div>
+        <div class="inline card-field card-level">
+          <span class="label">Level:</span>
+          <span class="text">{{card.level}}</span>
+        </div>
+      </div>
+      <div class="card-field card-type">
+        <span class="label">Monster type:</span>
+        <span class="text">{{card.type}}</span>
+      </div>
+      <div class="inline-content">
+        <div class="inline card-field card-atk">
+          <span class="label">ATK:</span>
+          <span class="text">{{card.atk}}</span>
+        </div>
+        <div class="inline card-field card-def">
+          <span class="label">DEF:</span>
+          <span class="text">{{card.def}}</span>
+        </div>
+      </div>
+      <div class="card-field card-text">
+        <span class="label">Card text:</span>
+        <span class="text">{{card.text}}</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="switch" (click)="vc.toggleDeck()"
+[class.show]=vc.viewIsSmall()
+[class.bg-dark-blue]="vc.display">
+  <div class="deck-state" [ngSwitch]="vc.display">
+      <div *ngSwitchCase="true">CLOSE DECK</div>
+      <div *ngSwitchCase="false">OPEN DECK</div>
+  </div>
+</div>
+<div appToggleable>
+  <div class="cards-list" *ngIf="deck"
+  [class.show-deck]="vc.display"
+  [class.bb-dark-blue]="vc.display"
+  [class.hide-deck]="!vc.display">
+      <div class="card" *ngFor="let card of deck.cards"
+      (click)="onSelect(card)"
+      [class.selected]="ifIsSelected(card)">
+          <div class="card-name">
+              {{card.name}}
+          </div>
+          <div class="card-type">
+              {{card.card_type}}
+            </div>
+      </div>
+    </div>
+</div>

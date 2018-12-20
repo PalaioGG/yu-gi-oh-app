@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "yu-gi-oh-app"
+  "defaultProject": "yu-gi-oh-app",
+  "cli": {
+    "warnings": {
+      "typescriptMismatch": false
+    }
+  }
 }

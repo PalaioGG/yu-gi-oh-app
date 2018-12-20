@@ -1,0 +1,94 @@
+
+.cards-list {
+    overflow: scroll;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    overflow-x: hidden;
+    transition: height .5s;
+    background-color: #E9E9E9;
+    border-bottom: 2px solid #532274;
+    font-size: small;
+}
+
+.show-deck {
+    height: 90vh;
+}
+
+.hide-deck {
+    height: 0;
+}
+
+.card {
+    padding: 1em 1.5em;
+    box-shadow: -20px -33px 90px -50px inset #888;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card.selected {
+    background-color: #532274;
+    color: #E9E9E9;
+}
+
+.card.selected .card-name {
+    border-bottom: 1px solid #E9E9E9;
+    position: relative;
+}
+
+.card:hover {
+    color: #532274;
+    box-shadow: -20px -14px 60px -38px inset #532274;
+}
+.card.selected:hover {
+    color: #E9E9E9;
+}
+
+.card-name {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.card-type {
+    width: 100%;
+}
+
+.card-name,
+.card-type {
+    padding: .4em;
+}
+
+.switch {
+    height: 40px;
+    width: 100%;
+    background-color: #532274;
+    z-index: 90;
+    transition: background-color .5s;
+}
+.bg-dark-blue { background-color: #0C0E25!important; }
+.bb-dark-blue { border-bottom: 6px solid #0C0E25; }
+
+.deck-state {
+    text-align: center;
+    height: 100%;
+    padding: .6em;
+    color: #E9E9E9;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1250px) {
+
+}
+
+@media screen and (min-width: 990px) {
+    .show-deck {
+        width: auto;
+        height: 100vh;
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .cards-list {
+        font-size: initial;
+    }
+}
