@@ -21,7 +21,7 @@ Next, the `cards-list` component and `deck` service.
 Next, created the `card-information` component. 
 This is the basic logic of the controllers.
 
-Many times during these stages, code was revisited and refactored.
+During these stages, code was revisited and refactored.
 
 The UI was developed last, with responsiveness in mind.
 Added a `toggleable` directive for the `deck` sidebar.
