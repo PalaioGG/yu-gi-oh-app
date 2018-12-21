@@ -47,14 +47,11 @@
 .card-name {
     width: 100%;
     border-bottom: 1px solid black;
+    padding: .4em;
 }
 
 .card-type {
     width: 100%;
-}
-
-.card-name,
-.card-type {
     padding: .4em;
 }
 
@@ -64,20 +61,19 @@
     background-color: #532274;
     z-index: 90;
     transition: background-color .5s;
+    cursor: pointer;
+}
+.switch:hover {
+    box-shadow: -20px -33px 90px -50px inset #888;
+    transition: box-shadow .1s;
 }
 .bg-dark-blue { background-color: #0C0E25!important; }
 .bb-dark-blue { border-bottom: 6px solid #0C0E25; }
 
 .deck-state {
     text-align: center;
-    height: 100%;
     padding: .6em;
     color: #E9E9E9;
-    cursor: pointer;
-}
-
-@media screen and (min-width: 1250px) {
-
 }
 
 @media screen and (min-width: 990px) {

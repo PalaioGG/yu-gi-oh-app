@@ -28,7 +28,7 @@ export class CardsListComponent implements OnInit {
       .subscribe(deck => this.deck = deck );
   }
 
-  onSelect(card: Card) {
+  onSelect(card: Card): void {
     const onSmallScreen = this.vc.viewIsSmall();
     const closeTheDeck = () => this.vc.display = false;
 

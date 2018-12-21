@@ -10,6 +10,7 @@
     min-width: 15em;
     align-self: center; 
     margin-bottom: 1.7em;
+    margin-left: 0;
 }
 
 .image-holder img {
@@ -72,6 +73,7 @@
 
     .image-holder {
         align-self: auto;
+        margin-left: 2em;
     }
 }
 

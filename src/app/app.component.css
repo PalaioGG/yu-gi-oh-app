@@ -17,8 +17,8 @@
 }
 
 .sidebar {
-    position: relative;
-    /* flex: 1; */
+    position: absolute;
+    z-index: 99;
     min-width: 22em;
     background-color: #E9E9E9;
     width: 100%;
@@ -27,22 +27,6 @@
 .main-view {
     flex: 1;
     overflow: auto;
-}
-
-.togglable {
-    position: absolute;
-    z-index: 99;
-}
-
-.togglable.off {
-    left: -100%;
-}
-.togglable.on {
-    left: 0;
-}
-  
-@media screen and (min-width: 1250px) {
-
 }
 
 @media screen and (min-width: 990px) {

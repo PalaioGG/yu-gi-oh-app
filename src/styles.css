@@ -13,13 +13,6 @@ body {
     overflow: hidden;
 }
 
-.switch {
-    height: 50px;
-    width: 100%;
-    background-color: #45D1C3;
-    display: block;
-}
-
 .show {
     display: block;
 }
